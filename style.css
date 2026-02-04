@@ -13,10 +13,12 @@
           /* grid-template-columns: 1fr 2fr; */
           /* รวม คอลั่มกับโรล */
           /* grid-template: 50px 200px 100px / 1fr 2fr; */
-          grid-template-areas:
+
+          /* grid-template-areas:
                     "head head head"
                     "sidebar main main"
-                    "sidebar foot foot2";
+                    "sidebar foot foot2"; */
+
           /* column-gap: 1em;
           row-gap: 1em; */
           gap: 0.6em;
@@ -33,27 +35,33 @@
           background-color: beige;
           /* width: 100vw; */
           border: 2px solid red;
-          grid-area: head;
+          /* grid-area: head; */
+          grid-column-start: 1;
+          grid-column-end: 4;
 }
 
 .box2 {
           background-color: rebeccapurple;
-          grid-area: sidebar;
+          /* grid-area: sidebar; */
+          grid-row-start: 2;
+          grid-row-end: 4;
 }
 
 .box3 {
           background-color: greenyellow;
           /* overflow: auto; */
-          grid-area: main;
+          /* grid-area: main; */
 }
 
 .box4 {
           background-color: pink;
-          grid-area: foot;
+          /* grid-area: foot; */
 }
 .box5 {
           background-color: beige;
-          grid-area: foot2;
+          /* grid-area: foot2; */
+          grid-row-start: 3;
+          grid-row-end: 5;
 }
 .box6 {
           background-color: gold;
