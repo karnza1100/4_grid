@@ -1,0 +1,65 @@
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+
+.container {
+          display: grid;
+          /* กำหนดคอลั่มแบบจำนวนครั้งได้ */
+          /* grid-template-columns: repeat(8, minmax(100px, 1fr)); */
+          /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+          /* grid-template-rows: 50px 200px 100px; */
+          /* grid-template-columns: 1fr 2fr; */
+          /* รวม คอลั่มกับโรล */
+          /* grid-template: 50px 200px 100px / 1fr 2fr; */
+          grid-template-areas:
+                    "head head head"
+                    "sidebar main main"
+                    "sidebar foot foot2";
+          /* column-gap: 1em;
+          row-gap: 1em; */
+          gap: 0.6em;
+                    
+          div {
+                    border: 2px solid green;
+          }
+}
+
+
+
+.box1 {
+          background-color: beige;
+          /* width: 100vw; */
+          border: 2px solid red;
+}
+
+.box2 {
+          background-color: rebeccapurple;
+}
+
+.box3 {
+          background-color: greenyellow;
+          /* overflow: auto; */
+}
+
+.box4 {
+          background-color: pink;
+          ;
+}
+.box5 {
+          background-color: beige;
+          ;
+}
+.box6 {
+          background-color: gold;
+          ;
+}
+.box7 {
+          background-color: gray;
+          ;
+}
+.box8 {
+          background-color: red;
+          ;
+}
